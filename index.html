@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta content="Interior Painting Plus+ LLC" property="og:title">
+        
     
     
     <link href="https://prophone.herokuapp.com/staticfiles/landing_page_gen/style.css" rel="stylesheet">
@@ -13,6 +14,7 @@
     
     <script src="https://prophone.herokuapp.com/staticfiles/landing_page_gen/render.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/4f07488cb7.js" crossorigin="anonymous"></script>
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.0.2/tailwind.min.css">
     
     <meta content="https://landing-page-app-hero-images.s3.amazonaws.com/media/V9LFIS9BJNT3HBI07RSV7ZJSG4G9AER2MA5P1HBH.png" property="og:image">
@@ -26,7 +28,7 @@
     
     
 
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    
 
       <title>Interior Painting Plus+ LLC - Exceptional, Professional Service. We treat customers like family. </title>
 
@@ -68,7 +70,7 @@
       <a class="px-4 py-2 mt-2 text-lg  font-bold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 lg:mt-0 lg:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="#faqs">Faqs</a>
       
       
-      <a class="px-4 py-2 mt-2 text-lg  font-bold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 lg:mt-0 lg:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="#find-us">Find Us</a>
+      <a class="px-4 py-2 mt-2 text-lg  font-bold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 lg:mt-0 lg:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="#find-us">Service Areas</a>
       
       
          <div class = "px-4 py-2 lg:pb-3 mt-2 text-xl font-bold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 lg:mt-0 lg:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"x-data="{open: false}">
@@ -156,7 +158,10 @@
         </div>
     </div>
     <div class="relative order-first lg:order-last block lg:w-1/2 ">
+
+    
         <img src="https://landing-page-app-hero-images.s3.amazonaws.com/media/Jencover1.jpg"  alt = "Main hero image of Interior Painting Plus+ LLC performing  work"  class="object-cover w-full lg:absolute h-80 lg:h-full">
+    
     </div>
 </section>
 
@@ -168,9 +173,12 @@
 
     <section id = "about" class="flex flex-col flex-grow w-full overflow-hidden  lg:flex-row sm:mx-auto  bg-white text-indigo-900 ">
         <div class="relative lg:w-1/2">
+        
             
-            <img src="https://landing-page-app-hero-images.s3.amazonaws.com/media/SFMOLRB9WIBNOYI9L4MDOQT017QWHLJ7UQTBHF7V.png"   alt="About Us Image"  class="object-cover w-full lg:absolute h-80 lg:h-full">
+                <img src="https://landing-page-app-hero-images.s3.amazonaws.com/media/SFMOLRB9WIBNOYI9L4MDOQT017QWHLJ7UQTBHF7V.png"   alt="About Us Image"  class="object-cover w-full lg:absolute h-80 lg:h-full">
             
+        
+           
         </div>
         <div class="py-5 lg:py-0 flex flex-col lg:py-32 lg:px-16 lg:w-1/2">
             <div class="flex flex-col items-center lg:items-start w-full lg:max-w-lg">
@@ -243,6 +251,7 @@
                                  
                            
                   
+
                </div>
             
             
@@ -334,78 +343,97 @@
         <div class="container relative flex flex-col justify-between h-full max-w-6xl px-10 mx-auto xl:px-0">
                 <h1 class="mb-3 text-3xl font-extrabold leading-none sm:text-4xl lg:text-7xl tracking-wide  text-center">Our Best Work</h1>
                 <h2 class="my-3 mb-10 text-xl font-medium text-indigo-500 text-center">See why our customers love us</h2>
-                <div class="flex flex-wrap md:mx-4 md:mb-8 md:flex-row">
+                <div class="flex flex-wrap md:mx-4 md:mb-8 md:flex-row" x-data="{ open:false }" @keydown.escape= "open = false">
+
                 
-                
-                    <div class="flex sm:h-30 md:h-auto md:w-1/3 px-4 mb-8"><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/3FCU28R4HY92OSYFWDNUFEPQH5EE44TLFM86BH6Y.jpeg"  alt = "Photo number 1 of Interior Painting Plus+ LLC&#x27;s best work performing a null job"   loading="lazy" ></div>
+                    
+                                
+                        <div class="flex sm:h-30 md:h-auto md:w-1/3 px-4 mb-8" @click="open = true" ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/3FCU28R4HY92OSYFWDNUFEPQH5EE44TLFM86BH6Y.jpeg"  alt = "Photo number 1 of Interior Painting Plus+ LLC&#x27;s best work performing a null job"   loading="lazy" ></div>
                     
                 
-                
-                    <div class="flex sm:h-30 md:h-auto md:w-1/3 px-4 mb-8"><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/M7NAOOA2CZHIWXL8OBCYQOGMA1XD47VV22NLLS7R.jpeg"  alt = "Photo number 2 of Interior Painting Plus+ LLC&#x27;s best work performing a null job"   loading="lazy" ></div>
+                    
+                                
+                        <div class="flex sm:h-30 md:h-auto md:w-1/3 px-4 mb-8" @click="open = true" ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/M7NAOOA2CZHIWXL8OBCYQOGMA1XD47VV22NLLS7R.jpeg"  alt = "Photo number 2 of Interior Painting Plus+ LLC&#x27;s best work performing a null job"   loading="lazy" ></div>
                     
                 
-                
-                    <div class="flex sm:h-30 md:h-auto md:w-1/3 px-4 mb-8"><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/O2NQ9HBTM4YA1OSQPD6Y9QQVYQKF6CFWWT0I335S.png"  alt = "Photo number 3 of Interior Painting Plus+ LLC&#x27;s best work performing a null job"   loading="lazy" ></div>
+                    
+                                
+                        <div class="flex sm:h-30 md:h-auto md:w-1/3 px-4 mb-8" @click="open = true" ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/O2NQ9HBTM4YA1OSQPD6Y9QQVYQKF6CFWWT0I335S.png"  alt = "Photo number 3 of Interior Painting Plus+ LLC&#x27;s best work performing a null job"   loading="lazy" ></div>
                     
                 
-                
-                    <div class="flex sm:h-30 md:h-auto md:w-1/3 px-4 mb-8"><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/DNSQBQ2BN4RBPEF1RUFPSD3A1I9V2JIZA9IUBOWW.jpeg"  alt = "Photo number 4 of Interior Painting Plus+ LLC&#x27;s best work performing a null job"   loading="lazy" ></div>
+                    
+                                
+                        <div class="flex sm:h-30 md:h-auto md:w-1/3 px-4 mb-8" @click="open = true" ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/DNSQBQ2BN4RBPEF1RUFPSD3A1I9V2JIZA9IUBOWW.jpeg"  alt = "Photo number 4 of Interior Painting Plus+ LLC&#x27;s best work performing a null job"   loading="lazy" ></div>
                     
                 
-                
-                    <div class="flex sm:h-30 md:h-auto md:w-1/3 px-4 mb-8"><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/jen1_fqFws3K.jpg"  alt = "Photo number 5 of Interior Painting Plus+ LLC&#x27;s best work performing a null job"   loading="lazy" ></div>
+                    
+                                
+                        <div class="flex sm:h-30 md:h-auto md:w-1/3 px-4 mb-8" @click="open = true" ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/jen1_fqFws3K.jpg"  alt = "Photo number 5 of Interior Painting Plus+ LLC&#x27;s best work performing a null job"   loading="lazy" ></div>
                     
                 
-                
-                    <div class="flex sm:h-30 md:h-auto md:w-1/3 px-4 mb-8"><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/jen3.jpg"  alt = "Photo number 6 of Interior Painting Plus+ LLC&#x27;s best work performing a null job"   loading="lazy" ></div>
+                    
+                                
+                        <div class="flex sm:h-30 md:h-auto md:w-1/3 px-4 mb-8" @click="open = true" ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/jen3.jpg"  alt = "Photo number 6 of Interior Painting Plus+ LLC&#x27;s best work performing a null job"   loading="lazy" ></div>
                     
                 
-                
-                    <div class="flex sm:h-30 md:h-auto md:w-1/3 px-4 mb-8"><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/05WQ52R2GKSZSMVR4PQ751LEFJLUE3EZ0KMLFFL4.png"  alt = "Photo number 7 of Interior Painting Plus+ LLC&#x27;s best work performing a null job"   loading="lazy" ></div>
+                    
+                                
+                        <div class="flex sm:h-30 md:h-auto md:w-1/3 px-4 mb-8" @click="open = true" ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/05WQ52R2GKSZSMVR4PQ751LEFJLUE3EZ0KMLFFL4.png"  alt = "Photo number 7 of Interior Painting Plus+ LLC&#x27;s best work performing a null job"   loading="lazy" ></div>
                     
                 
-                
-                    <div class="flex sm:h-30 md:h-auto md:w-1/3 px-4 mb-8"><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/2JHIKWXDFG68KJ9RQUNDQ2DYCA22OGR8DZQXNCDZ.png"  alt = "Photo number 8 of Interior Painting Plus+ LLC&#x27;s best work performing a null job"   loading="lazy" ></div>
+                    
+                                
+                        <div class="flex sm:h-30 md:h-auto md:w-1/3 px-4 mb-8" @click="open = true" ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/2JHIKWXDFG68KJ9RQUNDQ2DYCA22OGR8DZQXNCDZ.png"  alt = "Photo number 8 of Interior Painting Plus+ LLC&#x27;s best work performing a null job"   loading="lazy" ></div>
                     
                 
-                
-                    <div class="flex sm:h-30 md:h-auto md:w-1/3 px-4 mb-8"><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/0J3GXBH8IK3WMI2D7KIAU12IZMK0VXI1TMKCVRME.png"  alt = "Photo number 9 of Interior Painting Plus+ LLC&#x27;s best work performing a null job"   loading="lazy" ></div>
+                    
+                                
+                        <div class="flex sm:h-30 md:h-auto md:w-1/3 px-4 mb-8" @click="open = true" ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/0J3GXBH8IK3WMI2D7KIAU12IZMK0VXI1TMKCVRME.png"  alt = "Photo number 9 of Interior Painting Plus+ LLC&#x27;s best work performing a null job"   loading="lazy" ></div>
                     
                 
-                
-                    <div class="flex sm:h-30 md:h-auto md:w-1/3 px-4 mb-8"><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/0NVCGQHQY2QBY8MSPTA4NTPZLW2T2Q7VR886L96E.png"  alt = "Photo number 10 of Interior Painting Plus+ LLC&#x27;s best work performing a null job"   loading="lazy" ></div>
+                    
+                                
+                        <div class="flex sm:h-30 md:h-auto md:w-1/3 px-4 mb-8" @click="open = true" ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/0NVCGQHQY2QBY8MSPTA4NTPZLW2T2Q7VR886L96E.png"  alt = "Photo number 10 of Interior Painting Plus+ LLC&#x27;s best work performing a null job"   loading="lazy" ></div>
                     
                 
-                
-                    <div class="flex sm:h-30 md:h-auto md:w-1/3 px-4 mb-8"><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/ZD4ROQB8IZAEBIVHRMX2J5NPI932N4RI6ACTYELK.png"  alt = "Photo number 11 of Interior Painting Plus+ LLC&#x27;s best work performing a null job"   loading="lazy" ></div>
+                    
+                                
+                        <div class="flex sm:h-30 md:h-auto md:w-1/3 px-4 mb-8" @click="open = true" ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/ZD4ROQB8IZAEBIVHRMX2J5NPI932N4RI6ACTYELK.png"  alt = "Photo number 11 of Interior Painting Plus+ LLC&#x27;s best work performing a null job"   loading="lazy" ></div>
                     
                 
-                
-                    <div class="flex sm:h-30 md:h-auto md:w-1/3 px-4 mb-8"><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/Interior_Painting_Plus.png"  alt = "Photo number 12 of Interior Painting Plus+ LLC&#x27;s best work performing a null job"   loading="lazy" ></div>
+                    
+                                
+                        <div class="flex sm:h-30 md:h-auto md:w-1/3 px-4 mb-8" @click="open = true" ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/Interior_Painting_Plus.png"  alt = "Photo number 12 of Interior Painting Plus+ LLC&#x27;s best work performing a null job"   loading="lazy" ></div>
                     
                 
-                
-                    <div class="flex sm:h-30 md:h-auto md:w-1/3 px-4 mb-8"><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/jen2_xXINdqc.jpg"  alt = "Photo number 13 of Interior Painting Plus+ LLC&#x27;s best work performing a null job"   loading="lazy" ></div>
+                    
+                                
+                        <div class="flex sm:h-30 md:h-auto md:w-1/3 px-4 mb-8" @click="open = true" ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/jen2_xXINdqc.jpg"  alt = "Photo number 13 of Interior Painting Plus+ LLC&#x27;s best work performing a null job"   loading="lazy" ></div>
                     
                 
-                
-                    <div class="flex sm:h-30 md:h-auto md:w-1/3 px-4 mb-8"><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/ATWY0D2QI2WEW0O6AZGRVYEGHCCAR84457J6JA9X.png"  alt = "Photo number 14 of Interior Painting Plus+ LLC&#x27;s best work performing a null job"   loading="lazy" ></div>
+                    
+                                
+                        <div class="flex sm:h-30 md:h-auto md:w-1/3 px-4 mb-8" @click="open = true" ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/ATWY0D2QI2WEW0O6AZGRVYEGHCCAR84457J6JA9X.png"  alt = "Photo number 14 of Interior Painting Plus+ LLC&#x27;s best work performing a null job"   loading="lazy" ></div>
                     
                 
-                
-                    <div class="flex sm:h-30 md:h-auto md:w-1/3 px-4 mb-8"><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/jen9.jpg"  alt = "Photo number 15 of Interior Painting Plus+ LLC&#x27;s best work performing a null job"   loading="lazy" ></div>
+                    
+                                
+                        <div class="flex sm:h-30 md:h-auto md:w-1/3 px-4 mb-8" @click="open = true" ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/jen9.jpg"  alt = "Photo number 15 of Interior Painting Plus+ LLC&#x27;s best work performing a null job"   loading="lazy" ></div>
                     
                 
-                
-                    <div class="flex sm:h-30 md:h-auto md:w-1/3 px-4 mb-8"><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/IEV4I5U7SWK68XN14W2EVMSCGK6QM2AKZDNUITON.png"  alt = "Photo number 16 of Interior Painting Plus+ LLC&#x27;s best work performing a null job"   loading="lazy" ></div>
+                    
+                                
+                        <div class="flex sm:h-30 md:h-auto md:w-1/3 px-4 mb-8" @click="open = true" ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/IEV4I5U7SWK68XN14W2EVMSCGK6QM2AKZDNUITON.png"  alt = "Photo number 16 of Interior Painting Plus+ LLC&#x27;s best work performing a null job"   loading="lazy" ></div>
                     
                 
-                
-                    <div class="flex sm:h-30 md:h-auto md:w-1/3 px-4 mb-8"><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/Interior_Painting_Plus_3.png"  alt = "Photo number 17 of Interior Painting Plus+ LLC&#x27;s best work performing a null job"   loading="lazy" ></div>
+                    
+                                
+                        <div class="flex sm:h-30 md:h-auto md:w-1/3 px-4 mb-8" @click="open = true" ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/Interior_Painting_Plus_3.png"  alt = "Photo number 17 of Interior Painting Plus+ LLC&#x27;s best work performing a null job"   loading="lazy" ></div>
                     
                 
-                
-                    <div class="flex sm:h-30 md:h-auto md:w-1/3 px-4 mb-8"><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/HPXLVN2IH3COA73NJSH6XLJ3PP8HDM1MRMRIVD4V.png"  alt = "Photo number 18 of Interior Painting Plus+ LLC&#x27;s best work performing a null job"   loading="lazy" ></div>
+                    
+                                
+                        <div class="flex sm:h-30 md:h-auto md:w-1/3 px-4 mb-8" @click="open = true" ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/HPXLVN2IH3COA73NJSH6XLJ3PP8HDM1MRMRIVD4V.png"  alt = "Photo number 18 of Interior Painting Plus+ LLC&#x27;s best work performing a null job"   loading="lazy" ></div>
                     
                  
                 </div>     
@@ -496,6 +524,35 @@
                     <div class="flex items-center lg:items-start ">
                         
                         <div class="flex flex-col justify-start items-center lg:items-start ">
+                            <h3 class="font-bold  text-indigo-200  ">Becki Ehlers</h3>
+                            <h3 class=" text-indigo-200 ">Homeowner  , Refinishing  </h3>
+                            <div class="flex flex-row items-start ">
+                                
+                                
+                                <span class = " text-white "> <i class="fas fa-star"> </i> </span>
+                                
+                                <span class = " text-white "> <i class="fas fa-star"> </i> </span>
+                                
+                                <span class = " text-white "> <i class="fas fa-star"> </i> </span>
+                                
+                                <span class = " text-white "> <i class="fas fa-star"> </i> </span>
+                                
+                                <span class = " text-white "> <i class="fas fa-star"> </i> </span>
+                                
+                                
+                            </div>
+                            <blockquote class="mt-8 lg:pr-5 font-bold text-xl text-center lg:text-left   text-white ">"I was impressed by the extra time and work that was put into trying to make our ceiling water leak repair look good. They respected our home and tidied up after the ended.  We have plastered walls and popcorn ceilings. I really like the orange peel affect I have now. Looking forward to them doing my next project in my kitchen.  I would recommend you give them a call soon!"</blockquote>                           
+                        </div>
+                    </div>
+                    
+                    </div>
+
+                    
+            
+                    <div class="flex flex-col items-center lg:items-start justify-center w-full h-auto mb-12 lg:w-1/2">
+                    <div class="flex items-center lg:items-start ">
+                        
+                        <div class="flex flex-col justify-start items-center lg:items-start ">
                             <h3 class="font-bold  text-indigo-200  ">Sara Ludwig McColloch</h3>
                             <h3 class=" text-indigo-200 ">Homeowner  , Resurfacing  </h3>
                             <div class="flex flex-row items-start ">
@@ -554,35 +611,6 @@
                     <div class="flex items-center lg:items-start ">
                         
                         <div class="flex flex-col justify-start items-center lg:items-start ">
-                            <h3 class="font-bold  text-indigo-200  ">Becki Ehlers</h3>
-                            <h3 class=" text-indigo-200 ">Homeowner  , Refinishing  </h3>
-                            <div class="flex flex-row items-start ">
-                                
-                                
-                                <span class = " text-white "> <i class="fas fa-star"> </i> </span>
-                                
-                                <span class = " text-white "> <i class="fas fa-star"> </i> </span>
-                                
-                                <span class = " text-white "> <i class="fas fa-star"> </i> </span>
-                                
-                                <span class = " text-white "> <i class="fas fa-star"> </i> </span>
-                                
-                                <span class = " text-white "> <i class="fas fa-star"> </i> </span>
-                                
-                                
-                            </div>
-                            <blockquote class="mt-8 lg:pr-5 font-bold text-xl text-center lg:text-left   text-white ">"I was impressed by the extra time and work that was put into trying to make our ceiling water leak repair look good. They respected our home and tidied up after the ended.  We have plastered walls and popcorn ceilings. I really like the orange peel affect I have now. Looking forward to them doing my next project in my kitchen.  I would recommend you give them a call soon!"</blockquote>                           
-                        </div>
-                    </div>
-                    
-                    </div>
-
-                    
-            
-                    <div class="flex flex-col items-center lg:items-start justify-center w-full h-auto mb-12 lg:w-1/2">
-                    <div class="flex items-center lg:items-start ">
-                        
-                        <div class="flex flex-col justify-start items-center lg:items-start ">
                             <h3 class="font-bold  text-indigo-200  ">Mary Lou Johansen</h3>
                             <h3 class=" text-indigo-200 ">Homeowner  , Interior Painting  </h3>
                             <div class="flex flex-row items-start ">
@@ -621,8 +649,8 @@
 <section id= "faqs" class="py-16   bg-white text-indigo-900  md:py-20 lg:py-24">
     <div class="max-w-5xl px-12 mx-auto xl:px-0">
 
-        <h1 class="text-3xl  font-bold md:text-4xl lg:text-6xl xl:text-7xl text-center lg:text-left">FAQs</h1>
-        <h2 class="mt-4 text-xl font-thin  lg:text-2xl text-center lg:text-left">Your questions answered</h2>
+        <h1 class="mb-5 text-3xl  mx-auto text-center font-extrabold leading-none sm:text-4xl lg:text-7xl">Faqs</h1>
+         <h2 class="my-3 mb-10  text-xl font-medium text-indigo-500 text-center">Your questions answered</h2>
 
         <div class="relative mt-12 space-y-3">
 
@@ -631,197 +659,7 @@
             <!-- Question 1 -->
             <div x-data="{ show: false }" class="relative overflow-hidden border-b border-indigo-100 select-none">
                 <h3 @click="show=!show" class=" text-center flex items-center justify-between px-2 text-xl font-medium text-indigo-400 cursor-pointer sm:text-xl md:text-2xl py-7 hover:text-indigo-900  lg:text-left">
-                    <span class = "flex text-left lg:text-center">Do you use contractors?</span>
-                    <svg class="w-6 h-6 mr-2 transition-all duration-200 ease-out transform rotate-0" :class="{ '-rotate-180' : show }" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
-                </h3>
-                <p class="px-2 pt-0 -mt-2 text-indigo-900 sm:text-lg py-7 text-center lg:text-left"
-                    x-transition:enter="transition-all ease-out duration-300"
-                    x-transition:enter-start="opacity-0 transform -translate-y-4"
-                    x-transition:enter-end="opacity-100 transform -translate-y-0"
-                    x-transition:leave="transition-all ease-in duration-300"
-                    x-transition:leave-start="opacity-100 transform -translate-y-0"
-                    x-transition:leave-end="opacity-0 transform -translate-y-4"
-                    x-show="show"
-                    x-cloak>No. We hire our team members. This allows us to ensure that they are background checked, properly trained, and insured.</p>
-            </div>
-
-        
-
-            <!-- Question 1 -->
-            <div x-data="{ show: false }" class="relative overflow-hidden border-b border-indigo-100 select-none">
-                <h3 @click="show=!show" class=" text-center flex items-center justify-between px-2 text-xl font-medium text-indigo-400 cursor-pointer sm:text-xl md:text-2xl py-7 hover:text-indigo-900  lg:text-left">
-                    <span class = "flex text-left lg:text-center">Do I need to move everything out of the room?</span>
-                    <svg class="w-6 h-6 mr-2 transition-all duration-200 ease-out transform rotate-0" :class="{ '-rotate-180' : show }" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
-                </h3>
-                <p class="px-2 pt-0 -mt-2 text-indigo-900 sm:text-lg py-7 text-center lg:text-left"
-                    x-transition:enter="transition-all ease-out duration-300"
-                    x-transition:enter-start="opacity-0 transform -translate-y-4"
-                    x-transition:enter-end="opacity-100 transform -translate-y-0"
-                    x-transition:leave="transition-all ease-in duration-300"
-                    x-transition:leave-start="opacity-100 transform -translate-y-0"
-                    x-transition:leave-end="opacity-0 transform -translate-y-4"
-                    x-show="show"
-                    x-cloak>No. We will ask you to remove anything of value from the work space. Otherwise we will move furniture around as we need to, and put it back as it was when we are finished. We will always discuss specific items at the time of the consultation if they are in question.</p>
-            </div>
-
-        
-
-            <!-- Question 1 -->
-            <div x-data="{ show: false }" class="relative overflow-hidden border-b border-indigo-100 select-none">
-                <h3 @click="show=!show" class=" text-center flex items-center justify-between px-2 text-xl font-medium text-indigo-400 cursor-pointer sm:text-xl md:text-2xl py-7 hover:text-indigo-900  lg:text-left">
-                    <span class = "flex text-left lg:text-center">Do you required a contract?</span>
-                    <svg class="w-6 h-6 mr-2 transition-all duration-200 ease-out transform rotate-0" :class="{ '-rotate-180' : show }" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
-                </h3>
-                <p class="px-2 pt-0 -mt-2 text-indigo-900 sm:text-lg py-7 text-center lg:text-left"
-                    x-transition:enter="transition-all ease-out duration-300"
-                    x-transition:enter-start="opacity-0 transform -translate-y-4"
-                    x-transition:enter-end="opacity-100 transform -translate-y-0"
-                    x-transition:leave="transition-all ease-in duration-300"
-                    x-transition:leave-start="opacity-100 transform -translate-y-0"
-                    x-transition:leave-end="opacity-0 transform -translate-y-4"
-                    x-show="show"
-                    x-cloak>Yes we do have a contract that we ask you to sign. Specifically it is for the details of the project being performed, the materials being used and the colors chosen. It also specifies that you received all the warranty, and expectation paperwork. We ask for this to be completed before the start of the project. Sometimes the colors change, you picked a creamy white, but now want a gray, that is perfectly fine as long as we know and can revise the contract before starting the project.</p>
-            </div>
-
-        
-
-            <!-- Question 1 -->
-            <div x-data="{ show: false }" class="relative overflow-hidden border-b border-indigo-100 select-none">
-                <h3 @click="show=!show" class=" text-center flex items-center justify-between px-2 text-xl font-medium text-indigo-400 cursor-pointer sm:text-xl md:text-2xl py-7 hover:text-indigo-900  lg:text-left">
-                    <span class = "flex text-left lg:text-center">How soon can I get my project completed?</span>
-                    <svg class="w-6 h-6 mr-2 transition-all duration-200 ease-out transform rotate-0" :class="{ '-rotate-180' : show }" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
-                </h3>
-                <p class="px-2 pt-0 -mt-2 text-indigo-900 sm:text-lg py-7 text-center lg:text-left"
-                    x-transition:enter="transition-all ease-out duration-300"
-                    x-transition:enter-start="opacity-0 transform -translate-y-4"
-                    x-transition:enter-end="opacity-100 transform -translate-y-0"
-                    x-transition:leave="transition-all ease-in duration-300"
-                    x-transition:leave-start="opacity-100 transform -translate-y-0"
-                    x-transition:leave-end="opacity-0 transform -translate-y-4"
-                    x-show="show"
-                    x-cloak>Projects are scheduled in the order of deposit received. We try to schedule as fairly as we can. This means that if you are given an estimated start date at the consultation, but we don’t receive your deposit for 2 weeks, that start date may be given to another client first. We are a small company, and are generally booked out anywhere from 6 weeks to 3 months. We add a couple extra days on the calendar for each job. If we don’t have any delays, then we move on to the next project. This means we may be able to move your project up in time anywhere from a week to a full month.</p>
-            </div>
-
-        
-
-            <!-- Question 1 -->
-            <div x-data="{ show: false }" class="relative overflow-hidden border-b border-indigo-100 select-none">
-                <h3 @click="show=!show" class=" text-center flex items-center justify-between px-2 text-xl font-medium text-indigo-400 cursor-pointer sm:text-xl md:text-2xl py-7 hover:text-indigo-900  lg:text-left">
-                    <span class = "flex text-left lg:text-center">What is the difference between your resurfacing products?</span>
-                    <svg class="w-6 h-6 mr-2 transition-all duration-200 ease-out transform rotate-0" :class="{ '-rotate-180' : show }" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
-                </h3>
-                <p class="px-2 pt-0 -mt-2 text-indigo-900 sm:text-lg py-7 text-center lg:text-left"
-                    x-transition:enter="transition-all ease-out duration-300"
-                    x-transition:enter-start="opacity-0 transform -translate-y-4"
-                    x-transition:enter-end="opacity-100 transform -translate-y-0"
-                    x-transition:leave="transition-all ease-in duration-300"
-                    x-transition:leave-start="opacity-100 transform -translate-y-0"
-                    x-transition:leave-end="opacity-0 transform -translate-y-4"
-                    x-show="show"
-                    x-cloak>We have two different systems for resurfacing. StoneFleck is a 3 part epoxy &amp; acrylic system that is sprayed onto your surface. It can be used in bathtubs, shower surrounds, bathroom sinks, tile, countertops, walls, and on occasion floors. StoneFleck can be used on both horizontal and vertical surfaces, and comes in 36 different flecks, plus your standard glazing colors for tubs showers and sinks.  Our pourable epoxy is completely designed by hand, can be use on horizontal surfaces, and color is added to create the look of marble, granite, or even something as wild as your imagination.</p>
-            </div>
-
-        
-
-            <!-- Question 1 -->
-            <div x-data="{ show: false }" class="relative overflow-hidden border-b border-indigo-100 select-none">
-                <h3 @click="show=!show" class=" text-center flex items-center justify-between px-2 text-xl font-medium text-indigo-400 cursor-pointer sm:text-xl md:text-2xl py-7 hover:text-indigo-900  lg:text-left">
-                    <span class = "flex text-left lg:text-center">Are Consultations Free?</span>
-                    <svg class="w-6 h-6 mr-2 transition-all duration-200 ease-out transform rotate-0" :class="{ '-rotate-180' : show }" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
-                </h3>
-                <p class="px-2 pt-0 -mt-2 text-indigo-900 sm:text-lg py-7 text-center lg:text-left"
-                    x-transition:enter="transition-all ease-out duration-300"
-                    x-transition:enter-start="opacity-0 transform -translate-y-4"
-                    x-transition:enter-end="opacity-100 transform -translate-y-0"
-                    x-transition:leave="transition-all ease-in duration-300"
-                    x-transition:leave-start="opacity-100 transform -translate-y-0"
-                    x-transition:leave-end="opacity-0 transform -translate-y-4"
-                    x-show="show"
-                    x-cloak>Our initial consultation is always free with no obligations. And you can expect it to last anywhere from half an hour and up, depending on the size and detail of your project. We want to know every detail of your expectations of the project. And we will walk you through our processes as well as the materials and equipment we will be using to complete the project.</p>
-            </div>
-
-        
-
-            <!-- Question 1 -->
-            <div x-data="{ show: false }" class="relative overflow-hidden border-b border-indigo-100 select-none">
-                <h3 @click="show=!show" class=" text-center flex items-center justify-between px-2 text-xl font-medium text-indigo-400 cursor-pointer sm:text-xl md:text-2xl py-7 hover:text-indigo-900  lg:text-left">
-                    <span class = "flex text-left lg:text-center">I cant remember my scheduled start date. Will your team just show up unannounced?</span>
-                    <svg class="w-6 h-6 mr-2 transition-all duration-200 ease-out transform rotate-0" :class="{ '-rotate-180' : show }" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
-                </h3>
-                <p class="px-2 pt-0 -mt-2 text-indigo-900 sm:text-lg py-7 text-center lg:text-left"
-                    x-transition:enter="transition-all ease-out duration-300"
-                    x-transition:enter-start="opacity-0 transform -translate-y-4"
-                    x-transition:enter-end="opacity-100 transform -translate-y-0"
-                    x-transition:leave="transition-all ease-in duration-300"
-                    x-transition:leave-start="opacity-100 transform -translate-y-0"
-                    x-transition:leave-end="opacity-0 transform -translate-y-4"
-                    x-show="show"
-                    x-cloak>No. We send out reminder cards 15 – 30 days in advance to remind you of your upcoming project. And our Consultant will call you 3-5 days in advance to go over all the details again and verify your colors, one last time. Generally the only time we contact you last minute is if there is a sudden opening that can be filled. If this happens and you just arnt ready, let us know, we will leave you where you where on the schedule and fill in with someone else.</p>
-            </div>
-
-        
-
-            <!-- Question 1 -->
-            <div x-data="{ show: false }" class="relative overflow-hidden border-b border-indigo-100 select-none">
-                <h3 @click="show=!show" class=" text-center flex items-center justify-between px-2 text-xl font-medium text-indigo-400 cursor-pointer sm:text-xl md:text-2xl py-7 hover:text-indigo-900  lg:text-left">
-                    <span class = "flex text-left lg:text-center">Do you accept in person walk-ins?</span>
-                    <svg class="w-6 h-6 mr-2 transition-all duration-200 ease-out transform rotate-0" :class="{ '-rotate-180' : show }" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
-                </h3>
-                <p class="px-2 pt-0 -mt-2 text-indigo-900 sm:text-lg py-7 text-center lg:text-left"
-                    x-transition:enter="transition-all ease-out duration-300"
-                    x-transition:enter-start="opacity-0 transform -translate-y-4"
-                    x-transition:enter-end="opacity-100 transform -translate-y-0"
-                    x-transition:leave="transition-all ease-in duration-300"
-                    x-transition:leave-start="opacity-100 transform -translate-y-0"
-                    x-transition:leave-end="opacity-0 transform -translate-y-4"
-                    x-show="show"
-                    x-cloak>Please call ahead to visit our showroom and shop in person. We are currently accepting in person visit only via appointment.</p>
-            </div>
-
-        
-
-            <!-- Question 1 -->
-            <div x-data="{ show: false }" class="relative overflow-hidden border-b border-indigo-100 select-none">
-                <h3 @click="show=!show" class=" text-center flex items-center justify-between px-2 text-xl font-medium text-indigo-400 cursor-pointer sm:text-xl md:text-2xl py-7 hover:text-indigo-900  lg:text-left">
-                    <span class = "flex text-left lg:text-center">How do we schedule a consultation?</span>
-                    <svg class="w-6 h-6 mr-2 transition-all duration-200 ease-out transform rotate-0" :class="{ '-rotate-180' : show }" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
-                </h3>
-                <p class="px-2 pt-0 -mt-2 text-indigo-900 sm:text-lg py-7 text-center lg:text-left"
-                    x-transition:enter="transition-all ease-out duration-300"
-                    x-transition:enter-start="opacity-0 transform -translate-y-4"
-                    x-transition:enter-end="opacity-100 transform -translate-y-0"
-                    x-transition:leave="transition-all ease-in duration-300"
-                    x-transition:leave-start="opacity-100 transform -translate-y-0"
-                    x-transition:leave-end="opacity-0 transform -translate-y-4"
-                    x-show="show"
-                    x-cloak>The best way to get in touch is to call our shop at (712) 563-2166 or you may call or text Tracie our Project Consultant directly at 712-304-4816. You may also send us a message through our Facebook or Instagram page.</p>
-            </div>
-
-        
-
-            <!-- Question 1 -->
-            <div x-data="{ show: false }" class="relative overflow-hidden border-b border-indigo-100 select-none">
-                <h3 @click="show=!show" class=" text-center flex items-center justify-between px-2 text-xl font-medium text-indigo-400 cursor-pointer sm:text-xl md:text-2xl py-7 hover:text-indigo-900  lg:text-left">
-                    <span class = "flex text-left lg:text-center">Do you have a preferred paint Brand?</span>
-                    <svg class="w-6 h-6 mr-2 transition-all duration-200 ease-out transform rotate-0" :class="{ '-rotate-180' : show }" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
-                </h3>
-                <p class="px-2 pt-0 -mt-2 text-indigo-900 sm:text-lg py-7 text-center lg:text-left"
-                    x-transition:enter="transition-all ease-out duration-300"
-                    x-transition:enter-start="opacity-0 transform -translate-y-4"
-                    x-transition:enter-end="opacity-100 transform -translate-y-0"
-                    x-transition:leave="transition-all ease-in duration-300"
-                    x-transition:leave-start="opacity-100 transform -translate-y-0"
-                    x-transition:leave-end="opacity-0 transform -translate-y-4"
-                    x-show="show"
-                    x-cloak>We have our favorites, but we will also work with you if you have a preference of Brand. What we will always recommend is the materials that will work the best for your specific project.</p>
-            </div>
-
-        
-
-            <!-- Question 1 -->
-            <div x-data="{ show: false }" class="relative overflow-hidden border-b border-indigo-100 select-none">
-                <h3 @click="show=!show" class=" text-center flex items-center justify-between px-2 text-xl font-medium text-indigo-400 cursor-pointer sm:text-xl md:text-2xl py-7 hover:text-indigo-900  lg:text-left">
-                    <span class = "flex text-left lg:text-center">What Resurfacing Products do you use?</span>
+                    <span class = "flex text-left lg:text-left">What Resurfacing Products do you use?</span>
                     <svg class="w-6 h-6 mr-2 transition-all duration-200 ease-out transform rotate-0" :class="{ '-rotate-180' : show }" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
                 </h3>
                 <p class="px-2 pt-0 -mt-2 text-indigo-900 sm:text-lg py-7 text-center lg:text-left"
@@ -840,7 +678,7 @@
             <!-- Question 1 -->
             <div x-data="{ show: false }" class="relative overflow-hidden border-b border-indigo-100 select-none">
                 <h3 @click="show=!show" class=" text-center flex items-center justify-between px-2 text-xl font-medium text-indigo-400 cursor-pointer sm:text-xl md:text-2xl py-7 hover:text-indigo-900  lg:text-left">
-                    <span class = "flex text-left lg:text-center">Is there any warranty to your work?</span>
+                    <span class = "flex text-left lg:text-left">Is there any warranty to your work?</span>
                     <svg class="w-6 h-6 mr-2 transition-all duration-200 ease-out transform rotate-0" :class="{ '-rotate-180' : show }" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
                 </h3>
                 <p class="px-2 pt-0 -mt-2 text-indigo-900 sm:text-lg py-7 text-center lg:text-left"
@@ -856,6 +694,196 @@
 
         
 
+            <!-- Question 1 -->
+            <div x-data="{ show: false }" class="relative overflow-hidden border-b border-indigo-100 select-none">
+                <h3 @click="show=!show" class=" text-center flex items-center justify-between px-2 text-xl font-medium text-indigo-400 cursor-pointer sm:text-xl md:text-2xl py-7 hover:text-indigo-900  lg:text-left">
+                    <span class = "flex text-left lg:text-left">Do you required a contract?</span>
+                    <svg class="w-6 h-6 mr-2 transition-all duration-200 ease-out transform rotate-0" :class="{ '-rotate-180' : show }" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                </h3>
+                <p class="px-2 pt-0 -mt-2 text-indigo-900 sm:text-lg py-7 text-center lg:text-left"
+                    x-transition:enter="transition-all ease-out duration-300"
+                    x-transition:enter-start="opacity-0 transform -translate-y-4"
+                    x-transition:enter-end="opacity-100 transform -translate-y-0"
+                    x-transition:leave="transition-all ease-in duration-300"
+                    x-transition:leave-start="opacity-100 transform -translate-y-0"
+                    x-transition:leave-end="opacity-0 transform -translate-y-4"
+                    x-show="show"
+                    x-cloak>Yes we do have a contract that we ask you to sign. Specifically it is for the details of the project being performed, the materials being used and the colors chosen. It also specifies that you received all the warranty, and expectation paperwork. We ask for this to be completed before the start of the project. Sometimes the colors change, you picked a creamy white, but now want a gray, that is perfectly fine as long as we know and can revise the contract before starting the project.</p>
+            </div>
+
+        
+
+            <!-- Question 1 -->
+            <div x-data="{ show: false }" class="relative overflow-hidden border-b border-indigo-100 select-none">
+                <h3 @click="show=!show" class=" text-center flex items-center justify-between px-2 text-xl font-medium text-indigo-400 cursor-pointer sm:text-xl md:text-2xl py-7 hover:text-indigo-900  lg:text-left">
+                    <span class = "flex text-left lg:text-left">Do I need to move everything out of the room?</span>
+                    <svg class="w-6 h-6 mr-2 transition-all duration-200 ease-out transform rotate-0" :class="{ '-rotate-180' : show }" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                </h3>
+                <p class="px-2 pt-0 -mt-2 text-indigo-900 sm:text-lg py-7 text-center lg:text-left"
+                    x-transition:enter="transition-all ease-out duration-300"
+                    x-transition:enter-start="opacity-0 transform -translate-y-4"
+                    x-transition:enter-end="opacity-100 transform -translate-y-0"
+                    x-transition:leave="transition-all ease-in duration-300"
+                    x-transition:leave-start="opacity-100 transform -translate-y-0"
+                    x-transition:leave-end="opacity-0 transform -translate-y-4"
+                    x-show="show"
+                    x-cloak>No. We will ask you to remove anything of value from the work space. Otherwise we will move furniture around as we need to, and put it back as it was when we are finished. We will always discuss specific items at the time of the consultation if they are in question.</p>
+            </div>
+
+        
+
+            <!-- Question 1 -->
+            <div x-data="{ show: false }" class="relative overflow-hidden border-b border-indigo-100 select-none">
+                <h3 @click="show=!show" class=" text-center flex items-center justify-between px-2 text-xl font-medium text-indigo-400 cursor-pointer sm:text-xl md:text-2xl py-7 hover:text-indigo-900  lg:text-left">
+                    <span class = "flex text-left lg:text-left">Do you use contractors?</span>
+                    <svg class="w-6 h-6 mr-2 transition-all duration-200 ease-out transform rotate-0" :class="{ '-rotate-180' : show }" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                </h3>
+                <p class="px-2 pt-0 -mt-2 text-indigo-900 sm:text-lg py-7 text-center lg:text-left"
+                    x-transition:enter="transition-all ease-out duration-300"
+                    x-transition:enter-start="opacity-0 transform -translate-y-4"
+                    x-transition:enter-end="opacity-100 transform -translate-y-0"
+                    x-transition:leave="transition-all ease-in duration-300"
+                    x-transition:leave-start="opacity-100 transform -translate-y-0"
+                    x-transition:leave-end="opacity-0 transform -translate-y-4"
+                    x-show="show"
+                    x-cloak>No. We hire our team members. This allows us to ensure that they are background checked, properly trained, and insured.</p>
+            </div>
+
+        
+
+            <!-- Question 1 -->
+            <div x-data="{ show: false }" class="relative overflow-hidden border-b border-indigo-100 select-none">
+                <h3 @click="show=!show" class=" text-center flex items-center justify-between px-2 text-xl font-medium text-indigo-400 cursor-pointer sm:text-xl md:text-2xl py-7 hover:text-indigo-900  lg:text-left">
+                    <span class = "flex text-left lg:text-left">How soon can I get my project completed?</span>
+                    <svg class="w-6 h-6 mr-2 transition-all duration-200 ease-out transform rotate-0" :class="{ '-rotate-180' : show }" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                </h3>
+                <p class="px-2 pt-0 -mt-2 text-indigo-900 sm:text-lg py-7 text-center lg:text-left"
+                    x-transition:enter="transition-all ease-out duration-300"
+                    x-transition:enter-start="opacity-0 transform -translate-y-4"
+                    x-transition:enter-end="opacity-100 transform -translate-y-0"
+                    x-transition:leave="transition-all ease-in duration-300"
+                    x-transition:leave-start="opacity-100 transform -translate-y-0"
+                    x-transition:leave-end="opacity-0 transform -translate-y-4"
+                    x-show="show"
+                    x-cloak>Projects are scheduled in the order of deposit received. We try to schedule as fairly as we can. This means that if you are given an estimated start date at the consultation, but we don’t receive your deposit for 2 weeks, that start date may be given to another client first. We are a small company, and are generally booked out anywhere from 6 weeks to 3 months. We add a couple extra days on the calendar for each job. If we don’t have any delays, then we move on to the next project. This means we may be able to move your project up in time anywhere from a week to a full month.</p>
+            </div>
+
+        
+
+            <!-- Question 1 -->
+            <div x-data="{ show: false }" class="relative overflow-hidden border-b border-indigo-100 select-none">
+                <h3 @click="show=!show" class=" text-center flex items-center justify-between px-2 text-xl font-medium text-indigo-400 cursor-pointer sm:text-xl md:text-2xl py-7 hover:text-indigo-900  lg:text-left">
+                    <span class = "flex text-left lg:text-left">What is the difference between your resurfacing products?</span>
+                    <svg class="w-6 h-6 mr-2 transition-all duration-200 ease-out transform rotate-0" :class="{ '-rotate-180' : show }" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                </h3>
+                <p class="px-2 pt-0 -mt-2 text-indigo-900 sm:text-lg py-7 text-center lg:text-left"
+                    x-transition:enter="transition-all ease-out duration-300"
+                    x-transition:enter-start="opacity-0 transform -translate-y-4"
+                    x-transition:enter-end="opacity-100 transform -translate-y-0"
+                    x-transition:leave="transition-all ease-in duration-300"
+                    x-transition:leave-start="opacity-100 transform -translate-y-0"
+                    x-transition:leave-end="opacity-0 transform -translate-y-4"
+                    x-show="show"
+                    x-cloak>We have two different systems for resurfacing. StoneFleck is a 3 part epoxy &amp; acrylic system that is sprayed onto your surface. It can be used in bathtubs, shower surrounds, bathroom sinks, tile, countertops, walls, and on occasion floors. StoneFleck can be used on both horizontal and vertical surfaces, and comes in 36 different flecks, plus your standard glazing colors for tubs showers and sinks.  Our pourable epoxy is completely designed by hand, can be use on horizontal surfaces, and color is added to create the look of marble, granite, or even something as wild as your imagination.</p>
+            </div>
+
+        
+
+            <!-- Question 1 -->
+            <div x-data="{ show: false }" class="relative overflow-hidden border-b border-indigo-100 select-none">
+                <h3 @click="show=!show" class=" text-center flex items-center justify-between px-2 text-xl font-medium text-indigo-400 cursor-pointer sm:text-xl md:text-2xl py-7 hover:text-indigo-900  lg:text-left">
+                    <span class = "flex text-left lg:text-left">Are Consultations Free?</span>
+                    <svg class="w-6 h-6 mr-2 transition-all duration-200 ease-out transform rotate-0" :class="{ '-rotate-180' : show }" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                </h3>
+                <p class="px-2 pt-0 -mt-2 text-indigo-900 sm:text-lg py-7 text-center lg:text-left"
+                    x-transition:enter="transition-all ease-out duration-300"
+                    x-transition:enter-start="opacity-0 transform -translate-y-4"
+                    x-transition:enter-end="opacity-100 transform -translate-y-0"
+                    x-transition:leave="transition-all ease-in duration-300"
+                    x-transition:leave-start="opacity-100 transform -translate-y-0"
+                    x-transition:leave-end="opacity-0 transform -translate-y-4"
+                    x-show="show"
+                    x-cloak>Our initial consultation is always free with no obligations. And you can expect it to last anywhere from half an hour and up, depending on the size and detail of your project. We want to know every detail of your expectations of the project. And we will walk you through our processes as well as the materials and equipment we will be using to complete the project.</p>
+            </div>
+
+        
+
+            <!-- Question 1 -->
+            <div x-data="{ show: false }" class="relative overflow-hidden border-b border-indigo-100 select-none">
+                <h3 @click="show=!show" class=" text-center flex items-center justify-between px-2 text-xl font-medium text-indigo-400 cursor-pointer sm:text-xl md:text-2xl py-7 hover:text-indigo-900  lg:text-left">
+                    <span class = "flex text-left lg:text-left">I cant remember my scheduled start date. Will your team just show up unannounced?</span>
+                    <svg class="w-6 h-6 mr-2 transition-all duration-200 ease-out transform rotate-0" :class="{ '-rotate-180' : show }" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                </h3>
+                <p class="px-2 pt-0 -mt-2 text-indigo-900 sm:text-lg py-7 text-center lg:text-left"
+                    x-transition:enter="transition-all ease-out duration-300"
+                    x-transition:enter-start="opacity-0 transform -translate-y-4"
+                    x-transition:enter-end="opacity-100 transform -translate-y-0"
+                    x-transition:leave="transition-all ease-in duration-300"
+                    x-transition:leave-start="opacity-100 transform -translate-y-0"
+                    x-transition:leave-end="opacity-0 transform -translate-y-4"
+                    x-show="show"
+                    x-cloak>No. We send out reminder cards 15 – 30 days in advance to remind you of your upcoming project. And our Consultant will call you 3-5 days in advance to go over all the details again and verify your colors, one last time. Generally the only time we contact you last minute is if there is a sudden opening that can be filled. If this happens and you just arnt ready, let us know, we will leave you where you where on the schedule and fill in with someone else.</p>
+            </div>
+
+        
+
+            <!-- Question 1 -->
+            <div x-data="{ show: false }" class="relative overflow-hidden border-b border-indigo-100 select-none">
+                <h3 @click="show=!show" class=" text-center flex items-center justify-between px-2 text-xl font-medium text-indigo-400 cursor-pointer sm:text-xl md:text-2xl py-7 hover:text-indigo-900  lg:text-left">
+                    <span class = "flex text-left lg:text-left">Do you accept in person walk-ins?</span>
+                    <svg class="w-6 h-6 mr-2 transition-all duration-200 ease-out transform rotate-0" :class="{ '-rotate-180' : show }" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                </h3>
+                <p class="px-2 pt-0 -mt-2 text-indigo-900 sm:text-lg py-7 text-center lg:text-left"
+                    x-transition:enter="transition-all ease-out duration-300"
+                    x-transition:enter-start="opacity-0 transform -translate-y-4"
+                    x-transition:enter-end="opacity-100 transform -translate-y-0"
+                    x-transition:leave="transition-all ease-in duration-300"
+                    x-transition:leave-start="opacity-100 transform -translate-y-0"
+                    x-transition:leave-end="opacity-0 transform -translate-y-4"
+                    x-show="show"
+                    x-cloak>Please call ahead to visit our showroom and shop in person. We are currently accepting in person visit only via appointment.</p>
+            </div>
+
+        
+
+            <!-- Question 1 -->
+            <div x-data="{ show: false }" class="relative overflow-hidden border-b border-indigo-100 select-none">
+                <h3 @click="show=!show" class=" text-center flex items-center justify-between px-2 text-xl font-medium text-indigo-400 cursor-pointer sm:text-xl md:text-2xl py-7 hover:text-indigo-900  lg:text-left">
+                    <span class = "flex text-left lg:text-left">How do we schedule a consultation?</span>
+                    <svg class="w-6 h-6 mr-2 transition-all duration-200 ease-out transform rotate-0" :class="{ '-rotate-180' : show }" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                </h3>
+                <p class="px-2 pt-0 -mt-2 text-indigo-900 sm:text-lg py-7 text-center lg:text-left"
+                    x-transition:enter="transition-all ease-out duration-300"
+                    x-transition:enter-start="opacity-0 transform -translate-y-4"
+                    x-transition:enter-end="opacity-100 transform -translate-y-0"
+                    x-transition:leave="transition-all ease-in duration-300"
+                    x-transition:leave-start="opacity-100 transform -translate-y-0"
+                    x-transition:leave-end="opacity-0 transform -translate-y-4"
+                    x-show="show"
+                    x-cloak>The best way to get in touch is to call our shop at (712) 563-2166 or you may call or text Tracie our Project Consultant directly at 712-304-4816. You may also send us a message through our Facebook or Instagram page.</p>
+            </div>
+
+        
+
+            <!-- Question 1 -->
+            <div x-data="{ show: false }" class="relative overflow-hidden border-b border-indigo-100 select-none">
+                <h3 @click="show=!show" class=" text-center flex items-center justify-between px-2 text-xl font-medium text-indigo-400 cursor-pointer sm:text-xl md:text-2xl py-7 hover:text-indigo-900  lg:text-left">
+                    <span class = "flex text-left lg:text-left">Do you have a preferred paint Brand?</span>
+                    <svg class="w-6 h-6 mr-2 transition-all duration-200 ease-out transform rotate-0" :class="{ '-rotate-180' : show }" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                </h3>
+                <p class="px-2 pt-0 -mt-2 text-indigo-900 sm:text-lg py-7 text-center lg:text-left"
+                    x-transition:enter="transition-all ease-out duration-300"
+                    x-transition:enter-start="opacity-0 transform -translate-y-4"
+                    x-transition:enter-end="opacity-100 transform -translate-y-0"
+                    x-transition:leave="transition-all ease-in duration-300"
+                    x-transition:leave-start="opacity-100 transform -translate-y-0"
+                    x-transition:leave-end="opacity-0 transform -translate-y-4"
+                    x-show="show"
+                    x-cloak>We have our favorites, but we will also work with you if you have a preference of Brand. What we will always recommend is the materials that will work the best for your specific project.</p>
+            </div>
+
+        
+
         </div>
     </div>
 </section>
@@ -866,7 +894,7 @@
 <section id="find-us" class="py-16   bg-white text-indigo-900  md:py-20 lg:py-20">
     <div class="max-w-5xl px-12 mx-auto text-center xl:px-0">
 
-    <h1 class="mb-5 text-3xl  mx-auto text-center font-extrabold leading-none sm:text-4xl lg:text-7xl"> Our Service Areas </h1>
+    <h1 class="mb-5 text-3xl  mx-auto text-center font-extrabold leading-none sm:text-4xl lg:text-7xl"> Service Areas </h1>
     <h2 class="my-3 mb-10  text-xl font-medium text-indigo-500 text-center"> Proudly Serving    audubon & Surrounding Areas   </h2>
     <iframe
             width="100%"
@@ -901,13 +929,14 @@
                 
                 
                 
-                <li> <a href="#find-us" class=" px-2 md:px-4 text-indigo-500 hover:text-white">Find Us</a></li>
+                <li> <a href="#find-us" class=" px-2 md:px-4 text-indigo-500 hover:text-white">Service Areas</a></li>
                 
             </ul>
         </div>
     </div>
 </section>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/2.8.0/alpine.js"></script>
+
 </body>
 </html>
 
